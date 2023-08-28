@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Forum</title>
+    <link rel="stylesheet" type="text/css" href="forum.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the discussion Forum</h1>
+        <h3>Remember to follow the guidelines of this discussion forum and be respectful to other people on the forum</h3>
+      </header>
+    
+      <main>
+        <section>
+          <h2>Forum Categories</h2>
+          <ul id="categories">
+            <!-- Categories will be added dynamically using JavaScript -->
+          </ul>
+        </section>
+    
+        <section>
+          <h2>Forum Threads</h2>
+          <ul id="threads">
+            <!-- Threads will be added dynamically using JavaScript -->
+          </ul>
+        </section>
+    
+        <section>
+          <h2>Create Thread</h2>
+          <form id="create-thread-form">
+            <input type="text" id="thread-title" placeholder="Thread Title">
+            <textarea id="thread-content" placeholder="Thread Content"></textarea>
+            <button type="submit">Create Thread</button>
+          </form>
+        </section>
+        <div id="thread-list">
+          <!-- Thread listings go here -->
+        </div>
+        
+      </main>
+      <script src="forum.js"></script>
+</body>
+</html>

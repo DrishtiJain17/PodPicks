@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Homepage</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <header></header>
+    <div id="inner">
+        <div id="hdr">
+          <span>
+          
+            <h1>Pod<b>Picks</b></h1>
+          
+          </span>
+          </div>
+          <div>
+                <nav>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Podcasts</a></li>
+                    <li><a href = "forum.html" > Discussion</a></li>
+                    <li><a href="#">Profile</a></li>
+                  </ul>
+                </nav>
+              </header>
+                <section id="reviews">
+                  <h2>Latest Podcast Reviews</h2>
+                  <!-- Review listings go here -->
+                </section>
+            
+                <section id="discussion">
+                  <h2>Discussion Forum</h2>
+                  <!-- Discussion forum goes here -->
+                </section>
+            </div>
+            <!--// hdr -->
+  
+   <table id="myTable" class="table table-bordered">   
+  
+  
+    <thead>  
+      <tr>  
+        <th> Name </th>  
+        <th> Podcast Name </th>  
+        <th> Rating </th>  
+        <th> Date </th> 
+      </tr> 
+    </thead>  
+    <tbody> 
+      <tr>  
+      <td>
+       <textarea name="Episode" placeholder="Episode" th:field="${questionAnswerSet.answer}" id="answer" style="resize: none; width: 100%;"></textarea>
+       </td>
+       <td>
+         <textarea name="Podcast" placeholder="Podcast" th:field="${questionAnswerSet.answer}" id="answer" style="resize: none; width: 100%;"></textarea> 
+       <td>
+         <textarea name="Rating" placeholder="Rating" th:field="${questionAnswerSet.answer}" id="answer" style="resize: none; width: 100%;"></textarea>
+       </td>
+       <td>
+        <input type= "date"  placeholder="Date" th:field="${questionAnswerSet.answer}" id="answer" style="resize: none; width: 100%; height:auto;"></input>
+      </td>
+        <td>  
+          <button class="save"> Save </button>  
+          <button class="edit"> Edit </button>  
+          <button class="delete"> Delete </button>  
+        </td>  
+      </tr>  
+    </tbody>  
+  </table>  
+  
+  <div class="table-data">
+      <input type="button" id="more_fields" onclick="add_fields();" value="Add More" class="btn btn-info" />
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>  
+  <script>$(document).on('click', '.edit', function() {  
+    $(this).parent().siblings('td.data').each(function() {  
+      var content = $(this).html();  
+      $(this).html('<input value="' + content + '" />');  
+    });  
+    $(this).siblings('.save').show();  
+    $(this).siblings('.delete').hide();  
+    $(this).hide();  
+  });  
+  $(document).on('click', '.save', function() {  
+    $('input').each(function() {  
+      var content = $(this).val();  
+      $(this).html(content);  
+      $(this).contents().unwrap();  
+    });  
+    $(this).siblings('.edit').show();  
+    $(this).siblings('.delete').show();  
+    $(this).hide();  
+  });  
+  $(document).on('click', '.delete', function() {  
+    $(this).parents('tr').remove();  
+  });  
+  $('.add').click(function() {  
+    $(this).parents('table').append('<tr><td class="data"></td><td class="data"></td><td class="data"></td><td><button class="save">Save</button><button class="edit">Edit</button> <button class="delete">Delete</button></td></tr>');  
+  });</script>
+</body>
+</html>

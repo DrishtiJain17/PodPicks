@@ -1,0 +1,169 @@
+body {  
+    font-family: 'Montserrat', sans-serif;  
+    text-align: center;  
+  }  
+  body{  
+    background-color:black;  
+    font-family: sans-serif;  
+    color: rgb(220,220,220);  
+    overflow-x: hidden;  
+  }  
+  #forumlink{
+    background-color: antiquewhite;
+    text-align: left;
+    margin:15px;
+    padding:5px;
+  }
+  #hdr{
+    background-color:beige;
+    padding: 5px;
+    margin: 15px;
+  }
+  
+  tr:first-child { color: #75420e; }  
+  td:hover {  
+    color: white;  
+    font-weight: bold;   
+    transition-delay: 0s;  
+      transition-duration: 0.4s;  
+      transition-property: all;  
+    transition-timing-function: line;  
+  }  
+  h1 {  
+    position: relative;  
+    padding: 0;  
+    margin: 10;  
+    font-family:  "Merriweather", "Georgia", serif;  
+   font-weight: 400;  
+    font-size: 40px;  
+    color: #181818;  
+    -webkit-transition: all 0.4s ease 0s;  
+    -o-transition: all 0.4s ease 0s;  
+    transition: all 0.4s ease 0s;   
+  }  
+  
+  h2{
+    position: relative;  
+    padding: 0;  
+    margin: 10;  
+    font-family:  "Merriweather", "Georgia", serif;  
+   font-weight: 200;  
+    font-size: 20px;  
+    color: #181818;  
+    -webkit-transition: all 0.4s ease 0s;  
+    -o-transition: all 0.4s ease 0s;  
+    transition: all 0.4s ease 0s;   
+  }
+  
+  .table {  
+    width: 100%;  
+    thead {  
+      th {  
+        padding: 10px 10px;  
+        background: #00adee;  
+        font-size: 25px;  
+        text-transform: uppercase;  
+        vertical-align: top;  
+        color: #1D4A5A;  
+        font-weight: normal;  
+        text-align: left;  
+      }  
+    }  
+    tbody {  
+      tr {  
+        td {  
+          padding: 10px;  
+          background: #f2f2f2;  
+          font-size: 14px;  
+        }  
+      }  
+    }  
+  }  
+  .add {  
+    outline: none;  
+    background: none;  
+    border: none;  
+  }  
+  .edit {  
+    outline: none;  
+    background: none;  
+    border: none;  
+  }  
+  .save {  
+    outline: none;  
+    background: none;  
+    border: none;  
+  }  
+  .delete {  
+    outline: none;  
+    background: none;  
+    border: none;  
+  }  
+  .edit {  
+    padding: 5px 10px;  
+    cursor: pointer;  
+  }  
+  .save {  
+    padding: 5px 10px;  
+    cursor: pointer;  
+  }  
+  .delete {  
+    padding: 5px 10px;  
+    cursor: pointer;  
+  }  
+  .add {  
+    float: right;  
+    background: transparent;  
+    border: 1px solid  black;  
+    color: black;  
+    font-size: 13px;  
+    padding: 0;  
+    padding: 3px 5px;  
+    cursor: pointer;  
+    &:hover {  
+      background: #ffffff;  
+      color: #00adee;  
+    }  
+  }  
+  .save {  
+    display: none;  
+    background: #32AD60;  
+    color: #ffffff;  
+    &:hover {  
+      background: darken(#32AD60, 10%);  
+    }  
+  }  
+  .edit {  
+    background:#75420e;  
+    color: #ffffff;  
+    &:hover {  
+      background: darken(#2199e8, 10%);  
+    }  
+  }  
+  .delete {  
+    background: 	#553b08;  
+    color: #ffffff;  
+     &:hover {  
+      background: darken(#EC5840, 10%);  
+    }  
+  }  
+  
+  .chart{
+     padding: 10;  
+    margin: 10
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
